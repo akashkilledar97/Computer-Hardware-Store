@@ -1,0 +1,151 @@
+<html lang="en">
+	<head>
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<title>Order</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+		<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+
+
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<style>
+	.footer{
+	position:fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	background-color: #3f3f3f;
+	color: #d5d5d5;
+}
+	</style>
+	<body class="fit" background="images/3.png" height="100%" style="background-repeat:no repeat; background-position:center;">
+
+		<!--navigation bar-->
+		<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+		<div class="container-fluid">
+		<a class="navbr-brand" href="index.php"><img src="images/title_img.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.php">Home</a>
+					</li>
+					
+				</ul>
+			</div>
+		</div>
+		</nav>
+		<!----Navigation End--->
+		
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-12 col-md-4 col-lg-2 col-xl-4"">
+				<form class="form" action="order1.php" method="post">
+						<div class="row">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label style="color:#ffffff";>Name : </label>
+							</div>
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<input type="text" name="name" placeholder="Custumer Name" > 						
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label style="color:#ffffff";>Address : </label>
+							</div>
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<input type="text" name="add" placeholder="Custumer Address"> 						
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label style="color:#ffffff";>Email : </label>
+							</div>
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<input type="text" name="add" placeholder="Email"> 						
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label style="color:#ffffff";>Product : </label>
+							</div>
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+							
+								<input type="text" list="products" name="product" placeholder="Product">
+								<datalist id="products">
+								<option value="Mechanical keyboard">
+								<option value="Wired Keyboard">
+								<option value="Gaming Mouse">
+								<option value="Wired Mouse">
+								<option value="Wireless Mouse">
+								<option value="1TB External Hard Disk">
+								<option value="500gb Internal Hard Disk">
+								<option value="2TB External Hard Disk">
+								<option value="2gb RAM">
+								<option value="4gb RAM">
+								<option value="8gb RAM">
+								<option value="16gb RAM">
+								<option value="Charger Cable">
+								<option value="HDMI Cable">
+								<option value="LAN Cable">
+								<option value="HDMI Converter">
+								<option value="LAN Converter">
+								</datalist>
+												
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								<label style="color:#ffffff";>Quantity : </label>
+							</div>
+							<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+								
+								<input type="text" list="qty" name="quantity" placeholder="Quantity">
+								<datalist id="qty">
+								<option value="1">
+								<option value="2">
+								<option value="3">
+								<option value="4">
+								<option value="5">
+								</datalist>
+													
+							</div>
+						</div>
+						<input class="btn btn-primary" type="submit" name="sub" value="Submit">
+				</form>
+				</div>
+				</div>
+				</div>
+					</body>
+
+<footer>
+    <div class="footer"  style="background-color: black;">
+        <div class="row">
+            <div class="col-sm">
+              <b>Site Links</b><br>
+                  <a href="index.php">Home</a><br>
+                  <!-- <a href="#"">Medecines</a><br> -->
+                  <a href="#"></a><br>
+                      <a href="#"></a><br>
+            </div>
+            <div class="col-sm"><b>Social Links </b><br> <a href="#"><i class="fab fa-facebook" style="font-size: 50px;"></i></a>
+              <a href="#"><i class="fab fa-instagram" style="font-size: 50px;"></i></a>
+               <a href="#"><i class="fab fa-youtube" style="font-size: 50px;"></i></a>
+              <a href="#"><i class="fab fa-twitter-square" style="font-size: 50px;"></i></a>
+             </div>
+            </div>
+            <hr>
+            Designed and Developed by Kishan Tambralli and Akash Killedar
+    </div>
+	</footer>
+
+					</html>
